@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home">
+
+    <FrameLayout
+        android:id="@+id/fame"
+        android:layout_width="match_parent"
+        android:layout_height="79dp"
+        android:layout_gravity="top"
+        android:background="#292B2D">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/username"
+                android:layout_width="163dp"
+                android:layout_height="21dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="31dp"
+                android:layout_marginTop="26dp"
+                android:layout_marginEnd="217dp"
+                android:layout_marginBottom="32dp"
+                android:text="hello dude Mother"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/logout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginBottom="16dp"
+                android:backgroundTint="#30FFFFFF"
+                android:text="Logout" />
+        </RelativeLayout>
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fame"
+        android:layout_marginTop="43dp"
+        android:gravity="center"
+        android:text="React Quizz"
+        android:textColor="#292B2D"
+        android:textSize="20dp" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/fame"
+        android:gravity="center"
+        android:layout_marginTop="90dp"
+        app:srcCompat="@drawable/reactlogo" />
+
+    <Button
+        android:id="@+id/start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:layout_marginBottom="-86dp"
+        android:backgroundTint="#292B2D"
+        android:text="Start" />
+
+    <TextView
+        android:id="@+id/fortest"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/start"
+        android:layout_marginTop="-85dp"
+        android:gravity="center"
+        android:text="here will show" />
+
+</RelativeLayout>
